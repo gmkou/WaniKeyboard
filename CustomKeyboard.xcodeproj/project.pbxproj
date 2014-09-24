@@ -13,6 +13,9 @@
 		9BB46E1219D2D140005CCA04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB46E1119D2D140005CCA04 /* Images.xcassets */; };
 		9BB46E1519D2D140005CCA04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB46E1319D2D140005CCA04 /* LaunchScreen.xib */; };
 		9BB46E2119D2D140005CCA04 /* CustomKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB46E2019D2D140005CCA04 /* CustomKeyboardTests.swift */; };
+		9BB46E3319D2D155005CCA04 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB46E3219D2D155005CCA04 /* KeyboardViewController.swift */; };
+		9BB46E3619D2D155005CCA04 /* waniboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9BB46E2E19D2D155005CCA04 /* waniboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BB46E3E19D2D1E6005CCA04 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB46E3D19D2D1E6005CCA04 /* CustomKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,35 @@
 			remoteGlobalIDString = 9BB46E0419D2D140005CCA04;
 			remoteInfo = CustomKeyboard;
 		};
+		9BB46E3419D2D155005CCA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB46DFD19D2D140005CCA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB46E2D19D2D155005CCA04;
+			remoteInfo = waniboard;
+		};
+		9BB46E3719D2D155005CCA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BB46DFD19D2D140005CCA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BB46E2D19D2D155005CCA04;
+			remoteInfo = waniboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BB46E3C19D2D155005CCA04 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9BB46E3619D2D155005CCA04 /* waniboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9BB46E0519D2D140005CCA04 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +67,10 @@
 		9BB46E1A19D2D140005CCA04 /* CustomKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB46E1F19D2D140005CCA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB46E2019D2D140005CCA04 /* CustomKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardTests.swift; sourceTree = "<group>"; };
+		9BB46E2E19D2D155005CCA04 /* waniboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = waniboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB46E3119D2D155005CCA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB46E3219D2D155005CCA04 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		9BB46E3D19D2D1E6005CCA04 /* CustomKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BB46E2B19D2D155005CCA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +103,7 @@
 			children = (
 				9BB46E0719D2D140005CCA04 /* CustomKeyboard */,
 				9BB46E1D19D2D140005CCA04 /* CustomKeyboardTests */,
+				9BB46E2F19D2D155005CCA04 /* waniboard */,
 				9BB46E0619D2D140005CCA04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +113,7 @@
 			children = (
 				9BB46E0519D2D140005CCA04 /* CustomKeyboard.app */,
 				9BB46E1A19D2D140005CCA04 /* CustomKeyboardTests.xctest */,
+				9BB46E2E19D2D155005CCA04 /* waniboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9BB46E2F19D2D155005CCA04 /* waniboard */ = {
+			isa = PBXGroup;
+			children = (
+				9BB46E3219D2D155005CCA04 /* KeyboardViewController.swift */,
+				9BB46E3019D2D155005CCA04 /* Supporting Files */,
+				9BB46E3D19D2D1E6005CCA04 /* CustomKeyboard.xib */,
+			);
+			path = waniboard;
+			sourceTree = "<group>";
+		};
+		9BB46E3019D2D155005CCA04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BB46E3119D2D155005CCA04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +184,13 @@
 				9BB46E0119D2D140005CCA04 /* Sources */,
 				9BB46E0219D2D140005CCA04 /* Frameworks */,
 				9BB46E0319D2D140005CCA04 /* Resources */,
+				9BB46E3C19D2D155005CCA04 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9BB46E3519D2D155005CCA04 /* PBXTargetDependency */,
+				9BB46E3819D2D155005CCA04 /* PBXTargetDependency */,
 			);
 			name = CustomKeyboard;
 			productName = CustomKeyboard;
@@ -150,6 +215,23 @@
 			productReference = 9BB46E1A19D2D140005CCA04 /* CustomKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9BB46E2D19D2D155005CCA04 /* waniboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB46E3919D2D155005CCA04 /* Build configuration list for PBXNativeTarget "waniboard" */;
+			buildPhases = (
+				9BB46E2A19D2D155005CCA04 /* Sources */,
+				9BB46E2B19D2D155005CCA04 /* Frameworks */,
+				9BB46E2C19D2D155005CCA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = waniboard;
+			productName = waniboard;
+			productReference = 9BB46E2E19D2D155005CCA04 /* waniboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +247,9 @@
 					9BB46E1919D2D140005CCA04 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 9BB46E0419D2D140005CCA04;
+					};
+					9BB46E2D19D2D155005CCA04 = {
+						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
 			};
@@ -183,6 +268,7 @@
 			targets = (
 				9BB46E0419D2D140005CCA04 /* CustomKeyboard */,
 				9BB46E1919D2D140005CCA04 /* CustomKeyboardTests */,
+				9BB46E2D19D2D155005CCA04 /* waniboard */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +288,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB46E2C19D2D155005CCA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB46E3E19D2D1E6005CCA04 /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +319,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BB46E2A19D2D155005CCA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB46E3319D2D155005CCA04 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +334,16 @@
 			isa = PBXTargetDependency;
 			target = 9BB46E0419D2D140005CCA04 /* CustomKeyboard */;
 			targetProxy = 9BB46E1B19D2D140005CCA04 /* PBXContainerItemProxy */;
+		};
+		9BB46E3519D2D155005CCA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB46E2D19D2D155005CCA04 /* waniboard */;
+			targetProxy = 9BB46E3419D2D155005CCA04 /* PBXContainerItemProxy */;
+		};
+		9BB46E3819D2D155005CCA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BB46E2D19D2D155005CCA04 /* waniboard */;
+			targetProxy = 9BB46E3719D2D155005CCA04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,6 +498,30 @@
 			};
 			name = Release;
 		};
+		9BB46E3A19D2D155005CCA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = waniboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9BB46E3B19D2D155005CCA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = waniboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +547,14 @@
 			buildConfigurations = (
 				9BB46E2819D2D140005CCA04 /* Debug */,
 				9BB46E2919D2D140005CCA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BB46E3919D2D155005CCA04 /* Build configuration list for PBXNativeTarget "waniboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB46E3A19D2D155005CCA04 /* Debug */,
+				9BB46E3B19D2D155005CCA04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
